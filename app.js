@@ -16,7 +16,7 @@ app.use(session({
 }));
 
 app.get('/', (req, res) => {
-  res.send('Hello mundo!');
+  res.send('Hola mundo!');
 });
 
 app.get('/login', (req, res) => {
