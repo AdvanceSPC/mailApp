@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link type="text/css" href="./css/style.css">
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
 body{
 	margin: 0;
 	padding: 0;
 	background: #fff;
+
 	color: #fff;
 	font-family: Arial;
 	font-size: 12px;
@@ -26,10 +19,10 @@ body{
 	bottom: -40px;
 	width: auto;
 	height: auto;
+	background-image: url("images/digitaltransformation.jpg");
 	background-size: cover;
 	-webkit-filter: blur(5px);
 	z-index: 0;
-    background-image: url('https://advtestrec.s3.us-west-2.amazonaws.com/Prueba/digitaltransformation.jpg');
 }
 
 .grad{
@@ -61,8 +54,7 @@ body{
 }
 
 .header div span{
-	color: #EA5710 !important;
-    font-weight: bold;
+	color: #5379fa !important;
 }
 
 .login{
@@ -105,11 +97,11 @@ body{
 .login input[type=button]{
 	width: 260px;
 	height: 35px;
-	background: #EA5710;
+	background: #fff;
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #fff;
+	color: #a18d6c;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -146,19 +138,3 @@ body{
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
 }
-    </style>
-</head>
-<body background="digitaltransformation.jpg">
-    <div class="body"></div>
-		<div class="grad"></div>
-		<div class="header">
-			<div>Advance<span>SPC</span></div>
-		</div>
-		<br>
-		<div class="login">
-			<input type="text" placeholder="username" name="user"><br>
-			<input type="password" placeholder="password" name="password"><br>
-			<input type="button" value="Login">
-	</div>
-</body>
-</html>

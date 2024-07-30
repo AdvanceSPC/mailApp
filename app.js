@@ -8,6 +8,7 @@ const brevo = require('./brevo');
 const app = express();
 const port = 3000;
 
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
   secret: process.env.SECRET_KEY,
@@ -49,5 +50,5 @@ app.get('/contacts', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Example app listening at https://localhost:${port}`);
 });
